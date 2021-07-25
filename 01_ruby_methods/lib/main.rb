@@ -9,7 +9,7 @@
 # @return [String]  A string containing the name
 #
 # Test with `rspec 01_ruby_methods/spec/main_spec.rb:5`
-def greetings_interpolaton(name)
+def greetings_interpolation(name)
   # code goes here
 end
 

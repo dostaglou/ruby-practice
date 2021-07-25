@@ -1,0 +1,10 @@
+# frozen_string_literal: true
+
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new(:spec)
+
+task :greetings_interpolation do
+  sh 'rspec spec/main_spec.rb:5'
+end
+
+task default: %i[spec]
