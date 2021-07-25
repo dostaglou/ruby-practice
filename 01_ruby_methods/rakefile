@@ -7,4 +7,20 @@ task :greetings_interpolation do
   sh 'rspec spec/main_spec.rb:5'
 end
 
+task :a_turn_of_phrase do
+  sh 'rspec spec/main_spec.rb:65'
+end
+
+task :a_turn_of_phrase do
+  sh 'rspec spec/main_spec.rb:65'
+end
+
+task :dyslexic_accounting do
+  sh 'rspec spec/main_spec.rb:101'
+end
+
+task :haiku do
+  sh 'rspec spec/main_spec.rb:113'
+end
+
 task default: %i[spec]
