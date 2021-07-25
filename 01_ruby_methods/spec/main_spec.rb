@@ -110,7 +110,7 @@ describe '#dyslexic_accounting' do
   end
 end
 
-describe '#haiku' do
+describe '#haiku?' do
   let(:response) { haiku?(poem) }
 
   context 'acceptable haiku' do
