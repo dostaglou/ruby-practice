@@ -1,4 +1,5 @@
 ## Ruby Methods
+[Official Ruby Documentation for Calling Methods](https://ruby-doc.org/core-3.0.2/doc/syntax/calling_methods_rdoc.htmll)
 Ruby has many built in methods. These methods can be used to accomplish a variety of tasks. The methods discussed in this section will be ones that belong to various data types and can be called upon objects.
 
 ### Basic notation
@@ -46,7 +47,7 @@ Hash Methods: https://ruby-doc.org/core-3.0.2/Hash.html
 Range Methods: https://ruby-doc.org/core-3.0.2/Range.html
 
 From the above there are many commonly used methods you will see:
-String: `upcase`, `downcase`, `capitalize`, `empty?`, `gsub`
+String: `upcase`, `downcase`, `capitalize`, `empty?`, `gsub`, `chars`
 Enumerable: `each`, `map`, `any?`, `find`, `select`, `sort`, `inject`, `dig`
 Array: `include?`, `compact`, `flatten`, `first`, `last`, `<<`
 Hash: `key?`, `keys`, `values`, `merge`, `transform_values`

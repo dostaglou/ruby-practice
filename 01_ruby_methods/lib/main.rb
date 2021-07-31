@@ -8,7 +8,7 @@
 #
 # @return [String]  A string containing the name
 #
-# Test with `rspec 01_ruby_methods/spec/main_spec.rb:5`
+# Test with `rake greetings_interpolation` from the 01_ruby_methods directory
 def greetings_interpolation(name)
   # code goes here
 end
@@ -22,7 +22,7 @@ end
 #
 # @return [String] the original string reversed
 #
-# Test with `rspec 01_ruby_methods/spec/main_spec.rb:65`
+# Test with `rake a_turn_of_phrase` from the 01_ruby_methods directory
 def a_turn_of_phrase(sentence)
   # code goes here
 end
@@ -35,7 +35,7 @@ end
 #
 # @return [Integer] A single positive integer
 #
-# Test with `rspec 01_ruby_methods/spec/main_spec.rb:101`
+# Test with `rake dyslexic_accounting` from the 01_ruby_methods directory
 def dyslexic_accounting(number)
   # code goes here
 end
@@ -48,7 +48,7 @@ end
 #
 # @return [Boolean] True if there is a Haiku and false if not
 #
-# Test with `rspec 01_ruby_methods/spec/main_spec.rb:113`
+# Test with `rake haiku` from the 01_ruby_methods directory
 def haiku?(poem)
   # Code goes here
 end
