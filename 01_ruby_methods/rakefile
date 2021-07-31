@@ -16,11 +16,11 @@ task :a_turn_of_phrase do
 end
 
 task :dyslexic_accounting do
-  sh 'rspec spec/main_spec.rb:101'
+  sh 'rspec spec/main_spec.rb:69'
 end
 
-task :haiku do
-  sh 'rspec spec/main_spec.rb:113'
+task :alphabet_histogram do
+  sh 'rspec spec/main_spec.rb:81'
 end
 
 task default: %i[spec]

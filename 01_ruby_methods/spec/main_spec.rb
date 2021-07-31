@@ -78,54 +78,19 @@ describe '#dyslexic_accounting' do
   end
 end
 
-describe '#haiku?' do
-  let(:response) { haiku?(poem) }
+describe "#alphabet_histogram" do
+  options = [
+    "simple",
+    "this is a random string of characters that I am using for this example",
+    "Once there was a man from Nantucket who really loved to...",
+    "What will we do with a drunken sailor? What will we do with a drunken sailor? What will we do with a drunken sailor?"
+  ]
 
-  context 'acceptable haiku' do
-    let(:poem) { "this is a real haiku\n yes it's really a simple English haiku \n no matter what others say" }
-
-    it 'should return true' do
-      expect(response).to eql true
-    end
-  end
-
-  context 'unacceptable haiku - too many lines' do
-    let(:poem) { "this is a real haiku\n \n yes it's really a simple English haiku \n no matter what others say" }
-
-    it 'should return true' do
-      expect(response).to eql false
-    end
-  end
-
-  context 'unacceptable haiku - too few lines' do
-    let(:poem) { "this is a real haiku yes it's really a simple English haiku no matter what others say" }
-
-    it 'should return true' do
-      expect(response).to eql false
-    end
-  end
-
-  context 'unacceptable haiku - word count line 1' do
-    let(:poem) { "this isn't a real haiku, nope\n yes it's really a simple English haiku \n no matter what others say" }
-
-    it 'should return true' do
-      expect(response).to eql false
-    end
-  end
-
-  context 'unacceptable haiku - word count line 2' do
-    let(:poem) { "this isn't a real haiku\n no it's really not a simple English haiku \n no matter what others say" }
-
-    it 'should return true' do
-      expect(response).to eql false
-    end
-  end
-
-  context 'unacceptable haiku - word count line 3' do
-    let(:poem) { "this isn't a real haiku\n no it's really not an English haiku \n no matter what others say about it" }
-
-    it 'should return true' do
-      expect(response).to eql false
+  options.each do |option|
+    context "for the sentence: #{option}" do
+      it "should return the correct histogram" do
+        expect(alphabet_histogram(option)).to eql option.downcase.split("").group_by { |x| x }.transform_values { |v| v.size }
+      end
     end
   end
 end

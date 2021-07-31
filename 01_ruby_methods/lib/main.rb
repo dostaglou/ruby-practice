@@ -40,14 +40,15 @@ def dyslexic_accounting(number)
 end
 
 #
-# Takes a string that potentially includes line breaks \n. Determines if the string contains a Haiku
-# For this exercise an English Haiku contains 5 words on 1 line, 7 words on the next, and 5 on the last
+# Takes a single string sentence and returns a Hash histogram of the letters.
+# Thus "Apple" returns { "a" => 1, "p" => 2, "l" => 1, "e" => 1}
+# Note, it should be case insensitive so "A" and "a" both get reduced to "a"
 #
-# @param [String] poem A string potentially containing a Haiku
+# @param [String] string
 #
-# @return [Boolean] True if there is a Haiku and false if not
+# @return [Hash<char => count>] Hash of individual letters / characters and their frequency in the string
 #
-# Test with `rake haiku` from the 01_ruby_methods directory
-def haiku?(poem)
-  # Code goes here
+# Test with `rake alphabet_histogram` from the 01_ruby_methods directory
+def alphabet_histogram(string)
+  # code goes here
 end
