@@ -5,11 +5,11 @@ require_relative '../lib/main'
 describe '#greetings_interpolation' do
   let(:response) { greetings_interpolation(name) }
 
-  context 'name = Dillon' do
-    let(:name) { 'Dillon' }
+  context 'name = Tu' do
+    let(:name) { 'Tu' }
 
-    it 'should return Howdy Howdy, Dillon!' do
-      expect(response).to eql 'Howdy Howdy, Dillon!'
+    it 'should return Howdy Howdy, Tu!' do
+      expect(response).to eql 'Howdy Howdy, Tu!'
     end
   end
 
@@ -26,38 +26,6 @@ describe '#greetings_interpolation' do
 
     it 'should return Howdy Howdy, Christian!' do
       expect(response).to eql 'Howdy Howdy, Christian!'
-    end
-  end
-
-  context 'stripping the punctuation from the end' do
-    let(:name) { "Kevin,.!\"'" }
-
-    it 'should return Howdy Howdy, Kevin!' do
-      expect(response).to eql 'Howdy Howdy, Kevin!'
-    end
-  end
-
-  context 'stripping the punctuation from the middle' do
-    let(:name) { "T,.!\"'K" }
-
-    it 'should return Howdy Howdy, Tk!' do
-      expect(response).to eql 'Howdy Howdy, Tk!'
-    end
-  end
-
-  context 'stripping the punctuation from the start' do
-    let(:name) { ",.!\"'Tk" }
-
-    it 'should return Howdy Howdy, Tk!' do
-      expect(response).to eql 'Howdy Howdy, Tk!'
-    end
-  end
-
-  context 'all the things' do
-    let(:name) { ",.!\"' dillon ,.!\"'" }
-
-    it 'should return Howdy Howdy, Dillon!' do
-      expect(response).to eql 'Howdy Howdy, Dillon!'
     end
   end
 end

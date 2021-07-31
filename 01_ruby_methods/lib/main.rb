@@ -2,7 +2,6 @@
 # Takes a name and returns the string "Howdy Howdy, NAME!"
 # Additionally must remove white spaces around the name and use standard english capitalization
 # for example "  bOB " => "Bob"
-# Lastly remove any accidentally included standard punctuation ( , . ! " ' )
 #
 # @param [String]   name    Any ruby string, typically a name
 #
