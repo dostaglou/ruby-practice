@@ -1,5 +1,5 @@
 ## Ruby Methods
-[Official Ruby Documentation for Calling Methods](https://ruby-doc.org/core-3.0.2/doc/syntax/calling_methods_rdoc.htmll)
+[Official Ruby Documentation for Calling Methods](https://ruby-doc.org/core-3.0.2/doc/syntax/calling_methods_rdoc.html)
 Ruby has many built in methods. These methods can be used to accomplish a variety of tasks. The methods discussed in this section will be ones that belong to various data types and can be called upon objects.
 
 ### Basic notation

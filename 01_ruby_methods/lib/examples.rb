@@ -12,6 +12,7 @@ my_array.select { |x| x.odd? }         # LP: The {} block notation for some meth
 my_array.select do |x| x % 5 == 0 end  # LP: The do code end block notation for some methods
 my_array.select(&:even?)               # LP: The &:method notation for some methods
 
+
 my_array.map { |x| x * 2 }   # LP: re-enforcing the return even on similar methods can be different
 my_array.each { |x| x * 2 }  # LP: Tied to the above
 
