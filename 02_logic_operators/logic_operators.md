@@ -1,5 +1,5 @@
 ## Logic Operators
-Just like any other language, ruby has its owns way of handling basic logical operations. In this section we will go over the basic operators like Equality, NOT, AND, OR, if, else if, else, case-when, and ternaries.
+Just like any other language, ruby has its owns way of handling basic logical operations. In this section we will go over the basic operators like Equality, NOT, AND, OR, if (then), else if, else, case-when, and ternaries.
 
 ### Equality
 Comparisons of one object to another object are done with the `==` operator. This confirms if object A matches object B. For example: `"string" == "string"` comes out as `true`. Ruby is strongly typed unlike javascript and thus `"1" == 1` comes out as `false`. There is an optional `===` method. Unlike Javascript, `===` is not a stricter version of `==` and in almost all cases `==` is will be the stricter check.
@@ -36,11 +36,12 @@ AND is represented by `&&` and is a logical operator that confirms that both sid
 There is also the lowercase `and` operator in Ruby but it is probably best to avoid this for now. [StackOverflow Lini](https://stackoverflow.com/questions/1426826/difference-between-and-and-in-ruby)
 
 ### OR
-
 OR is represented by `||` and is the logical operator that confirms that either side of a conjunction are true `false || true` => `true`. It will also evaluate from the left to the right and so long as the left is true, will not attempt the right. Thus similar to AND above, the expression `true || nil.map(&:to_i)` will return `true` and not trigger the NoMethodError.
 
 There is also the lowercase `or` operator in Ruby but it is probably best to avoid this for now. [StackOverflow Lini](https://stackoverflow.com/questions/1426826/difference-between-and-and-in-ruby)
 
+### Exclusive OR
+There is one more OR in ruby called the exclusive OR that is represented by `^`. It is the English equivalent of "Either A or B but not both A and B". Therefore `false ^ true` returns `true` but `true ^ true` returns `false`.
 ### If / Unless Conditions
 Ruby ofters a simple condition flow that matches English quite easily. There are 1 line `if`s and `if` blocks. For example
 ```ruby
