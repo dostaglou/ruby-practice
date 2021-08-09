@@ -21,6 +21,7 @@
 #
 # @return [String|Integer] Either a string for "ground" or "bx" or an integer for all other cases
 #
+# To test, in 02_local_operators file run `rake floor_translator`
 def floor_translator(floor, start_dialect, output_dialect)
   # code goes here
 end
@@ -38,6 +39,7 @@ end
 #
 # @return [Hash<:fiz, :buzz, :fizzbuzz>]
 #
+# To test, in 02_local_operators file run `rake fizzhuzz_counter`
 def fizzbuzz_counter(array)
   # code goes here
 end
@@ -50,7 +52,7 @@ end
 #
 # @return [Boolean] True if there is a Haiku and false if not
 #
-# Test with `rake haiku` from the 01_ruby_methods directory
+# To test, in 02_local_operators file run `rake haiku?`
 def haiku?(poem)
   # code goes here
 end

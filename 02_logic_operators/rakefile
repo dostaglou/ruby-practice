@@ -4,3 +4,13 @@ require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new(:spec)
 
 task default: %i[spec]
+
+task :floor_translator do
+  sh 'rspec spec/main_spec.rb:5'
+end
+task :fizzbuzz_counter do
+  sh 'rspec spec/main_spec.rb:67'
+end
+task :haiku? do
+  sh 'rspec spec/main_spec.rb:103'
+end
