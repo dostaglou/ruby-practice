@@ -50,7 +50,7 @@ describe "#floor_counter" do
       let(:int) { 0 }
 
       it "should return ground" do
-        expect(response).to eql "ground"
+        expect(response).to eql "gfround"
       end
     end
 
@@ -73,7 +73,7 @@ describe "#fizzbuzz_counter" do
     array.each do |int|
       case
       when int % 5 == 0 && int % 3 == 0
-        fizzbuzz_count += 15
+        fizzbuzz_count += 1
       when int % 5 == 0
         buzz_count += 1
       when int % 3 == 0
