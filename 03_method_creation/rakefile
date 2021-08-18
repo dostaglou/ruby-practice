@@ -1,0 +1,14 @@
+# frozen_string_literal: true
+
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new(:spec)
+
+task default: %i[spec]
+
+task :argument_organizer do
+  sh 'rspec spec/main_spec.rb:6'
+end
+
+task :valid_data_type? do
+  sh 'rspec spec/main_spec.rb:27'
+end
