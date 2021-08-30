@@ -1,4 +1,4 @@
-### Classes in ruby
+### Classes in Ruby
 [RubyDoc Guide to Classes](https://ruby-doc.org/core-3.0.0/Class.html)
 
 "Classes in Ruby are first-class objects—each is an instance of class Class."

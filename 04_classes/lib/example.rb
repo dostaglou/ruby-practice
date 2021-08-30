@@ -17,6 +17,10 @@ class Worker
   def name=(val)
     @name = val
   end
+
+  def give_a_raise
+    @salary = (@salary * 1.01).round
+  end
 end
 
 class Engineer < Worker
